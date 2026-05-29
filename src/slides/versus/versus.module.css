@@ -1,0 +1,19 @@
+.versus {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto minmax(0, auto) auto;
+  align-content: center;
+  gap: 2rem;
+
+  block-size: inherit;
+
+  .heading {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  img {
+    margin: 0;
+  }
+}

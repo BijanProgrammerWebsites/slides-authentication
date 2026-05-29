@@ -1,0 +1,91 @@
+@layer reveal-core, reveal-theme, reveal-reset;
+
+@import url("reveal.js/reveal.css") layer(reveal-core);
+@import url("reveal.js/theme/serif.css") layer(reveal-theme);
+
+@layer reveal-reset {
+  html,
+  .reveal .slides,
+  .reveal .slides h1,
+  .reveal .slides h2,
+  .reveal .slides h3,
+  .reveal .slides h4,
+  .reveal .slides h5,
+  .reveal .slides h6,
+  .reveal .slide-number {
+    font-family: var(--font-worksans), sans-serif;
+  }
+
+  .reveal .slide-number {
+    background-color: transparent;
+
+    font-size: 1rem;
+
+    .slide-number-a {
+      color: var(--r-main-color);
+    }
+  }
+
+  .reveal table th,
+  .reveal table td {
+    text-align: start;
+  }
+
+  .reveal ul,
+  .reveal ol {
+    margin: 0;
+    margin-inline-start: 1em;
+  }
+
+  .reveal table ol {
+    margin: 0;
+  }
+
+  .reveal blockquote {
+    box-shadow: none;
+
+    padding: 0;
+
+    font-size: 1.2em;
+
+    &::before,
+    &::after {
+      opacity: 0.2;
+
+      position: absolute;
+
+      font-family: fantasy;
+      font-size: 4em;
+    }
+
+    &::before {
+      content: open-quote;
+
+      inset-block-start: -4rem;
+      inset-inline-end: -2rem;
+    }
+
+    &::after {
+      content: close-quote;
+
+      inset-block-end: -7rem;
+      inset-inline-start: 0;
+    }
+  }
+
+  .reveal .slides section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+
+    header {
+      display: grid;
+      gap: 1rem;
+    }
+
+    main {
+      display: grid;
+      place-content: center;
+    }
+  }
+}

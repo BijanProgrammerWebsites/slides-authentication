@@ -1,0 +1,60 @@
+:root {
+  --r-background-color: hsl(0deg 0% 100%);
+  --r-main-color: hsl(0deg 0% 0% / 70%);
+
+  --r-main-font: var(--font-worksans), sans-serif;
+  --r-main-font-size: 1.5rem;
+
+  --r-heading-color: hsl(0deg 0% 0%);
+  --r-heading-font: var(--font-worksans), sans-serif;
+  --r-heading1-size: 2em;
+  --r-heading2-size: 1.8em;
+  --r-heading3-size: 1.4em;
+  --r-heading-font-weight: 700;
+  --r-heading4-size: 0.7em;
+
+  --r-link-color: hsl(200deg 50% 50%);
+  --r-link-color-hover: hsl(200deg 50% 40%);
+
+  --r-selection-background-color: hsl(200deg 50% 50%);
+  --r-selection-color: hsl(200deg 50% 98%);
+
+  --color-container: hsl(200deg 50% 95%);
+  --color-container-index: hsl(200deg 50% 60%);
+
+  --border-radius: 0.4rem;
+}
+
+img.icon {
+  width: auto;
+  height: 2em;
+
+  vertical-align: middle;
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+
+    margin-block-end: 1rem;
+  }
+}
+
+ol {
+  li {
+    margin-block-end: 1rem;
+  }
+}
+
+.qr-code {
+  width: 16rem;
+  height: 16rem;
+}
+
+.icon {
+  &.reverse {
+    transform: scaleX(-1);
+  }
+}

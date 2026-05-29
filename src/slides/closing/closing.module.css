@@ -1,0 +1,85 @@
+.closing {
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+
+  .socials {
+    display: grid;
+    gap: 2.5rem;
+
+    > li {
+      position: relative;
+
+      text-align: center;
+
+      .title {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        margin-block-start: 0.5rem;
+
+        svg {
+          font-size: 1.25em;
+        }
+      }
+
+      .arrow {
+        color: var(--r-link-color);
+
+        position: absolute;
+      }
+
+      &:nth-child(1) {
+        .arrow {
+          inset-block-start: 4rem;
+          inset-inline-start: -1rem;
+
+          block-size: 4rem;
+
+          rotate: 10deg;
+        }
+      }
+
+      &:nth-child(2) {
+        .arrow {
+          inset-block-start: 3.5rem;
+          inset-inline-end: 0.5rem;
+
+          block-size: 3rem;
+
+          rotate: 195deg;
+        }
+      }
+
+      &:nth-child(3) {
+        .arrow {
+          inset-block-start: 7rem;
+          inset-inline-start: -2rem;
+
+          inline-size: 8rem;
+
+          scale: 1 -1;
+          rotate: -45deg;
+        }
+      }
+
+      &:nth-child(4) {
+        .arrow {
+          inset-block-start: 0.5rem;
+          inset-inline-end: 1.5rem;
+
+          block-size: 4rem;
+
+          rotate: 15deg;
+        }
+      }
+    }
+  }
+}

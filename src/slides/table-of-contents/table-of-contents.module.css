@@ -1,0 +1,43 @@
+.table-of-contents {
+  counter-reset: table-of-contents;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  list-style: none;
+
+  text-align: center;
+
+  li {
+    flex: 1 1 auto;
+
+    background-color: var(--color-container);
+
+    position: relative;
+
+    padding: 1rem 2rem;
+
+    border-radius: var(--border-radius);
+
+    font-size: 1.4em;
+
+    &::before {
+      content: counters(table-of-contents, ".");
+
+      counter-increment: table-of-contents;
+
+      background-image: none;
+      color: var(--color-container-index);
+
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline-start: 0;
+
+      transform: translate(-40%, -60%);
+
+      font-size: 2.4em;
+      font-weight: 700;
+    }
+  }
+}
