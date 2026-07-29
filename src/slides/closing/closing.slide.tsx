@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 
 import { Slide } from "@revealjs/react";
 
+import BaleLogo from "@/icons/BaleLogo";
 import HandDrawnArrow1 from "@/icons/HandDrawnArrow1";
 import HandDrawnArrow2 from "@/icons/HandDrawnArrow2";
 import HandDrawnArrow3 from "@/icons/HandDrawnArrow3";
@@ -43,6 +44,14 @@ export default function ClosingSlide(): ReactElement {
                 target="_blank"
               >
                 <MingcuteTelegramFill />
+                Codective
+              </a>
+              <a
+                className={styles.link}
+                href="http://ble.ir/Codective"
+                target="_blank"
+              >
+                <BaleLogo />
                 Codective
               </a>
               <HandDrawnArrow4 className={styles.arrow} />

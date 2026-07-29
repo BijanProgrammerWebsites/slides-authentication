@@ -49,8 +49,8 @@
 
       &:nth-child(2) {
         .arrow {
-          inset-block-start: 3.5rem;
-          inset-inline-end: 0.5rem;
+          inset-block-start: 4rem;
+          inset-inline-end: -1rem;
 
           block-size: 3rem;
 
@@ -65,8 +65,8 @@
 
           inline-size: 8rem;
 
-          scale: 1 -1;
           rotate: -45deg;
+          scale: 1 -1;
         }
       }
 
