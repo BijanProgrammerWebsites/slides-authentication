@@ -43,15 +43,8 @@ export default function ClosingSlide(): ReactElement {
                 href="https://t.me/Codective"
                 target="_blank"
               >
-                <MingcuteTelegramFill />
-                Codective
-              </a>
-              <a
-                className={styles.link}
-                href="http://ble.ir/Codective"
-                target="_blank"
-              >
                 <BaleLogo />
+                <MingcuteTelegramFill />
                 Codective
               </a>
               <HandDrawnArrow4 className={styles.arrow} />
@@ -63,15 +56,8 @@ export default function ClosingSlide(): ReactElement {
                 href="https://www.aparat.com/BijanProgrammer"
                 target="_blank"
               >
-                <SimpleIconsYoutube />
-                BijanProgrammer
-              </a>
-              <a
-                className={styles.link}
-                href="https://www.youtube.com/@BijanProgrammer"
-                target="_blank"
-              >
                 <SimpleIconsAparat />
+                <SimpleIconsYoutube />
                 BijanProgrammer
               </a>
               <HandDrawnArrow3 className={styles.arrow} />

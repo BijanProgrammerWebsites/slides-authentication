@@ -49,7 +49,7 @@
 
       &:nth-child(2) {
         .arrow {
-          inset-block-start: 4rem;
+          inset-block-start: 3.5rem;
           inset-inline-end: -1rem;
 
           block-size: 3rem;
@@ -60,7 +60,7 @@
 
       &:nth-child(3) {
         .arrow {
-          inset-block-start: 7rem;
+          inset-block-start: 6rem;
           inset-inline-start: -2rem;
 
           inline-size: 8rem;
