@@ -8,6 +8,6 @@ jobs:
   deploy:
     uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-nextjs.yml@master
     with:
-      process-name: web
-      port: 3011
+      process-name: authentication
+      port: 3012
     secrets: inherit
