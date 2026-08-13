@@ -8,10 +8,10 @@ import styles from "./cover.module.css";
 
 type Props = {
   heading: string;
-  basePath: string;
+  alias: string;
 };
 
-export default function CoverSlide({ heading, basePath }: Props): ReactElement {
+export default function CoverSlide({ heading, alias }: Props): ReactElement {
   return (
     <Slide>
       <div>
@@ -28,8 +28,8 @@ export default function CoverSlide({ heading, basePath }: Props): ReactElement {
       </div>
       <div className={styles.link}>
         <img className="qr-code" src={qrCodeImage.src} alt="QR Code" />
-        <a href={`https://schort.ir${basePath}`} target="_blank">
-          schort.ir{basePath}
+        <a href={`https://schort.ir/${alias}`} target="_blank">
+          schort.ir/{alias}
         </a>
       </div>
     </Slide>

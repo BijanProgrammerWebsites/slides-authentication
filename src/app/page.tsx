@@ -23,7 +23,7 @@ const RevealProvider = dynamic(() => import("@/providers/reveal.provider"), {
 export default function Home(): ReactElement {
   return (
     <RevealProvider>
-      <CoverSlide heading="Authentication" basePath="/auth" />
+      <CoverSlide heading="Authentication" alias="sauth" />
       <TableOfContentsSlide
         contents={[
           "Authentication vs Authorization",
