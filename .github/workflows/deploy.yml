@@ -7,10 +7,8 @@ on:
 
 jobs:
   deploy:
-    uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-nextjs.yml@master
+    uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-nextjs-export.yml@master
     with:
       domain: slides.bijanprogrammer.com
       base-href: /auth/
-      process-name: slides.bijanprogrammer.com_auth
-      port: 3012
     secrets: inherit
